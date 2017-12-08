@@ -1,0 +1,23 @@
+{
+    "name": "easyswoole/super-debug",
+    "description": "Make the easySwoole framework easier to debug",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "evalor",
+            "email": "mipone@foxmail.com"
+        }
+    ],
+    "require": {
+        "PHP": ">=5.6.0"
+    },
+    "require-dev": {
+        "easyswoole/easyswoole": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "easySwoole\\SuperDebug\\": "src"
+        }
+    }
+}

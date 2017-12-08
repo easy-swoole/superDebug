@@ -10,6 +10,7 @@
 namespace easySwoole\SuperDebug\Abstracts;
 
 use Core\AbstractInterface\ErrorHandlerInterface;
+use easySwoole\SuperDebug\ErrorException;
 
 /**
  * Abstracts ErrorHandle
@@ -17,7 +18,19 @@ use Core\AbstractInterface\ErrorHandlerInterface;
  * @author : evalor <master@evalor.cn>
  * @package easySwoole\SuperDebug\Handle
  */
-abstract class ErrorHandle implements ErrorHandlerInterface
+abstract class ErrorHandle extends Handle implements ErrorHandlerInterface
 {
-
+    /**
+     * @param $msg
+     * @param null $file
+     * @param null $line
+     * @param null $errorCode
+     * @param $trace
+     * @author : evalor <master@evalor.cn>
+     * @throws ErrorException
+     */
+    function handler($msg, $file = null, $line = null, $errorCode = null, $trace)
+    {
+        throw new ErrorException($errorCode, $msg, $file, $line, $trace);
+    }
 }

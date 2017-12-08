@@ -17,7 +17,7 @@ use Core\AbstractInterface\ExceptionHandlerInterface;
  * @author : evalor <master@evalor.cn>
  * @package easySwoole\SuperDebug\Abstracts
  */
-abstract class ExceptionHandle implements ExceptionHandlerInterface
+abstract class ExceptionHandle extends Handle implements ExceptionHandlerInterface
 {
 
 }

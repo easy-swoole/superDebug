@@ -17,7 +17,7 @@ use Core\AbstractInterface\HttpExceptionHandlerInterface;
  * @author : evalor <master@evalor.cn>
  * @package easySwoole\SuperDebug\Abstracts
  */
-abstract class HttpExceptionHandle implements HttpExceptionHandlerInterface
+abstract class HttpExceptionHandle extends Handle implements HttpExceptionHandlerInterface
 {
 
 }
